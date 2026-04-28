@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>holoc takeover</title>
+<style>
+body{
+    margin:0;
+    background:#0b1020;
+    color:#ffffff;
+    font-family:Arial,Helvetica,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.card{
+    background:#111827;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 0 30px rgba(0,0,0,.45);
+    text-align:center;
+    max-width:700px;
+}
+h1{
+    margin:0 0 15px;
+    color:#22c55e;
+    font-size:38px;
+}
+p{
+    color:#cbd5e1;
+    font-size:18px;
+    margin:10px 0;
+}
+code{
+    background:#1f2937;
+    padding:4px 8px;
+    border-radius:8px;
+    color:#facc15;
+}
+.small{
+    margin-top:20px;
+    font-size:14px;
+    color:#94a3b8;
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <h1>Subdomain Takeover by holoc</h1>
+    <p>Controlled by <code>holoc</code></p>
+    <p>Time: <span id="t"></span></p>
+    <p class="small">Security Proof of Concept for responsible disclosure.</p>
+</div>
+
+<script>
+document.getElementById("t").innerText = new Date().toUTCString();
+</script>
+</body>
+</html>
